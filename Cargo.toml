@@ -1,0 +1,17 @@
+[package]
+name = "feed-parser"
+version = "0.1.0"
+authors = ["Huy Tran <kingbazoka@gmail.com>"]
+include = [
+  "**/*.rs",
+  "Cargo.toml"
+]
+
+[dependencies]
+xml5ever     = "^0.7"
+serde        = "^1"
+serde_derive = "^1"
+serde_json   = "^1"
+chrono       = { version = "^0", features = ["serde"] }
+uuid = { version = "^0", features = ["v4"] }
+reqwest      = "0.8.2"
